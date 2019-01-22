@@ -91,7 +91,7 @@ class LoginPage extends Component {
             </div>
           </div>
         </form>
-        <center>
+        <center className={classes.linkButton}>
           <button
             type="button"
             className="link-button"
@@ -151,6 +151,9 @@ const styles = theme => ({
     textAlign: 'center',
     // paddingBottom: '13.75%',
   },
+  linkButton: {
+    marginBottom: '10%',
+  }
 
 });
 

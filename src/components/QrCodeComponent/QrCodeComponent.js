@@ -24,18 +24,17 @@ class QrCodeComponent extends Component {
                         variant="contained"
                         color="primary"
                         onClick={() => this.toggleQr()
-                        }
-                    >
+                        }>
                         Hide
                 </Button >
-                    <img alt="user qr code" src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://10.100.100.45:5000/api/user/attend/${this.props.user.code}/${this.props.eventId}`} />
+                    <img alt="user qr code" src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://10.100.100.242:5000/api/user/attend/${this.props.user.code}/${this.props.eventId}`} />
                 </div>
             )
         } else {
             qrCodeContent = <Button variant="contained"
-                                    color="primary"
-                                    onClick={() => this.toggleQr()
-                            }>
+                                color="primary"
+                                onClick={() => this.toggleQr()
+                                }>
                                 Show
                             </Button>
         }
